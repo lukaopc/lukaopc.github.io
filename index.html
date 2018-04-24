@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <style>
+  	#myContainer {
+	  width: 400px;
+	  height: 400px;
+	  position: relative;
+	  background: yellow;
+	}
+	
+	#myAnimation {
+	  width: 50px;
+	  height: 50px;
+	  position: absolute;
+	  background-color: red;
+	}
 
     table {
       font-family: arial, sans-serif;
@@ -109,7 +122,7 @@
     </a>
 
   <a href="http://www.w3.org/">
-    <img src="img/w3c.png" alt="Teste"> W3C Home
+    <img src="img/w3c2.png" alt="Teste"> W3C Home fundo azul
   </a>
 
   <a href="javascript:print()">
@@ -132,11 +145,11 @@
 
   <h2>Grupos de imagens</h2>
 
-  <img src="img/star-full.png"  alt="3.5 out of 5 stars">
+  <img src="img/star-full.png"  alt="3.4 out of 5 stars">
   <img src="img/star-full.png"  alt="">
-  <img src="img/star-full.png"  alt="">
-  <img src="img/star-half.png"  alt="">
-  <img src="img/star-empty.png" alt="">
+  <img src="img/star-full.png"  alt="3,4 out of 5 stars">
+  <img src="img/star-half.png"  alt="4.3 de 5 estrelas">
+  <img src="img/star-empty.png" alt="4,3 de 5 estrelas">
 
 
   <figure role="group" aria-labelledby="fig1">
@@ -216,12 +229,12 @@
   <h1>Cabeçalhos</h1>
   <h2>Títulos de seções</h2>
 
-  <h1>Este é um título 1</h1>
-  <h2>Este é um título 2</h2>
-  <h3>Este é um título 3</h3>
-  <h4>Este é um título 4</h4>
-  <h5>Este é um título 5</h5>
-  <h6>Este é um título 6</h6>
+  <h1>Este é o meu primeiro título</h1>
+  <h2>Este é o meu segundo título</h2>
+  <h3>Este é o meu terceiro título</h3>
+  <h4>Este é o meu quarto título</h4>
+  <h5>Este é o meu quinto título</h5>
+  <h6>Este é o meu sexto título</h6>
 
   <h1>Links</h1>
   <h2>Links locais</h2>
@@ -731,7 +744,55 @@
   <h2>Buttons</h2>
   <input type="button" onclick="alert('Hello World!')" value="Click Me!">
   <p>Selecione um modelo de carro</p>
+  
+  	<!------------------------------------------------------------------------->
+	<!----------------- Botao que tem uma interacao ------------------------->
+	<!------------------------------------------------------------------------->
+  	<h2>Botao com animacao</h2>
+	<p>Nesse caso, se você apertar um botão a lâmpada acende ou apaga</p>
+	<button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+	<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
 
+  	<h2>Botao que mostra a hora</h2>
+	<button onclick="myFunction()">Clique aqui para ver a hora</button>
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+		var d = new Date();
+		d.setHours(15);
+		document.getElementById("demo").innerHTML = d;
+	}
+	</script>
+	
+	<h2>Animação movimento de quadrado</h2>
+	<p>
+	<button onclick="myMove()">Clique aqui para ver a animação</button> 
+	</p>
+
+	<div id ="myContainer">
+	<div id ="myAnimation"></div>
+	</div>
+
+	<script>
+		function myMove() {
+		  var elem = document.getElementById("myAnimation");   
+		  var pos = 0;
+		  var id = setInterval(frame, 10);
+		  function frame() {
+			if (pos == 350) {
+			  clearInterval(id);
+			} else {
+			  pos++; 
+			  elem.style.top = pos + 'px'; 
+			  elem.style.left = pos + 'px'; 
+			}
+		  }
+		}	
+	</script>
+
+  
   <h2>Dropdowns list</h2>
     <select>
       <option value="volvo">Volvo</option>
