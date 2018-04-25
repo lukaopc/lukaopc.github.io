@@ -2,26 +2,27 @@
 <html lang="pt-br">
 <head>
 
-    <title>Aplicação Híbrida</title>
+    <title>Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <style>
+
   	#myContainer {
-	  width: 400px;
-	  height: 400px;
-	  position: relative;
-	  background: yellow;
-	}
+  	  width: 400px;
+  	  height: 400px;
+  	  position: relative;
+  	  background: yellow;
+	  }
 	
-	#myAnimation {
-	  width: 50px;
-	  height: 50px;
-	  position: absolute;
-	  background-color: red;
-	}
+  	#myAnimation {
+  	  width: 50px;
+  	  height: 50px;
+  	  position: absolute;
+  	  background-color: red;
+  	}
 
     table {
       font-family: arial, sans-serif;
@@ -45,213 +46,292 @@
       column-count: 3;
     }
 
+    h2 {
+
+    }
+
+    .titulo {
+      font-size: 6rem;
+      font-weight: 300;
+      line-height: 1.2;
+      padding-bottom: 1.5rem;
+    }
+
+    .subtitulo {
+      margin-top: 2.5rem;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
   </style>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 </head>
 
-<body class="m-3">
+<body>
 
-  <table>
-    <caption>Expediente de Trabalho</caption>
-      <tr>
-        <td></td>
-        <th>Domingo</th>
-        <th>Segunda</th>
-      </tr>
-      <tr>
-        <th>08:00 - 12:00</th>
-        <td>Fechado</td>
-        <td>Aberto</td>
-      </tr>
-      <tr>
-        <th>12:00 - 18:00</th>
-        <td>Fechado</td>
-        <td>Aberto</td>
-      </tr>
-  </table>
+  <div class="container">
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+        <h1 class="titulo">Texto</h1>
+        <h2 class="subtitulo">Texto em Parágrafo</h2>
 
+        <p class="mb-1">Este é o meu primeiro parágrafo.</p>
+        <p>Este é um outro parágrafo.</p>
 
-  <h1>Texto</h1>
-  <h2>Texto em parágrafo</h2>
+        <h2 class="subtitulo">Texto em Lista Ordenada</h2>
 
-  <p>Este é um parágrafo.</p>
-  <p>Este é um outro parágrafo.</p>
+        <ol>
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ol>
 
-  <h2>Texto em lista ordenada</h2>
+        <h2 class="subtitulo">Texto em Lista Desordenada</h2>
 
-  <ol>
-    <li>Café</li>
-    <li>Chá</li>
-    <li>Leite</li>
-  </ol>
+        <ul>
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ul>
 
-  <h2>Texto em lista desordenada</h2>
+        <h2 class="subtitulo">Texto em Colunas</h2>
 
-  <ul>
-    <li>Café</li>
-    <li>Chá</li>
-    <li>Leite</li>
-  </ul>
+        <div class="newspaper">
+          Todo documento HTML possui marcadores (tags), palavras entre parênteses angulares (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança.
+        </div>
 
-  <h2>Texto em colunas</h2>
+        <h2 class="subtitulo">Texto em Citação</h2>
 
-  <div class="newspaper">
-    Todo documento HTML possui marcadores (tags), palavras entre parênteses angulares (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança.
-  </div>
+        <p>O WWF trabalha constantemente por: <q>Um futuro em que as pessoas vivam em harmonia com a natureza.</q></p>
 
-  <h2>Texto em citação</h2>
+      </div>
+    </div>
 
-  <p>O WWF trabalha constantemente por: <q>Um futuro em que as pessoas vivam em harmonia com a natureza.</q></p>
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
 
-  <h1>Imagens</h1>
-  <h2>Imagens informativas</h2>
+        <h1 class="titulo">Imagens</h1>
 
-  <p>
-    <img src="img/dog.jpg" alt="Dog with a bell attached to its collar.">
-    Cães-guia fora de serviço costumam usar ...
-  </p>
+        <h2 class="subtitulo">Imagens Informativas</h2>
 
-  <h2>Imagens decorativas</h2>
+        <p>
+          <img src="img/dog.jpg" alt="Cachorro com um sino preso ao colarinho.">
+          Cães-guia fora de serviço costumam usar sinos no colarinho.
+        </p>
 
-  <img src="img/topinfo_bg.png" alt="" role="presentation">
+        <h2 class="subtitulo">Imagens Decorativas</h2>
 
-  <h2>Imagens funcionais</h2>
+        <img src="img/topinfo_bg.png" alt="" role="presentation">
 
-    <a href="http://www.w3.org/">
-      <img src="img/w3c.png" alt="Início do W3C">
-    </a>
+        <h2 class="subtitulo">Imagens Funcionais</h2>
 
-  <a href="http://www.w3.org/">
-    <img src="img/w3c2.png" alt="Teste"> W3C Home fundo azul
-  </a>
+        <div class="py-3">
+          <a href="http://www.w3.org/">
+            <img src="img/w3c.png" alt="Início do W3C">
+          </a>
+        </div>
 
-  <a href="javascript:print()">
-    <img src="img/print.png" alt="Print this page">
-  </a>
+        <div class="py-3">
+          <a href="http://www.w3.org/">
+            <img src="img/w3c2.png" alt="Imagem do W3C com fundo azul"> 
+            Logotipo do W3C Home
+          </a>
+        </div>
 
-  <h2>Imagens de texto</h2>
+        <div class="py-3">
+          <a href="javascript:print()">
+            <img src="img/print.png" alt="Imprimir esta página">
+          </a>
+        </div>
 
-  <img src="img/acess-city.png" alt="Seu acesso à cidade.">
+        <h2 class="subtitulo">Imagens de Texto</h2>
 
-  <h2>Imagens complexas</h2>
+        <img src="img/acess-city.png" alt="Seu acesso à cidade.">
 
-  <img src="img/peacock.jpg"
-       alt="Cabeça de um pavão macho"
-       aria-describedby="description">
+        <h2 class="subtitulo">Imagens Complexas</h2>
 
-  <p id="description">
-    O macho é azul metálico na coroa, as penas da cabeça são curtas e enroladas. A crista em forma de leque na cabeça é feita de penas com eixos pretos nus e ponta com cinto verde-avermelhado. Uma faixa branca acima do olho e uma mancha branca em forma de meia-lua abaixo do olho é formada por pele branca nua. Os lados da cabeça têm penas azul-esverdeadas iridescentes. A parte traseira tem penas bronze-verdes escamosas com marcações pretas e de cobre.
-  </p>
+        <img src="img/peacock.jpg"
+             alt="Cabeça de um pavão macho"
+             aria-describedby="description"
+             class="mb-4">
+        <p id="description">
+          O macho é azul metálico na coroa, as penas da cabeça são curtas e enroladas. A crista em forma de leque na cabeça é feita de penas com eixos pretos nus e ponta com cinto verde-avermelhado. Uma faixa branca acima do olho e uma mancha branca em forma de meia-lua abaixo do olho é formada por pele branca nua. Os lados da cabeça têm penas azul-esverdeadas iridescentes. A parte traseira tem penas bronze-verdes escamosas com marcações pretas e de cobre.
+        </p>
 
-  <h2>Grupos de imagens</h2>
+        <h2 class="subtitulo">Grupos de Imagens</h2>
 
-  <img src="img/star-full.png"  alt="3.4 out of 5 stars">
-  <img src="img/star-full.png"  alt="">
-  <img src="img/star-full.png"  alt="3,4 out of 5 stars">
-  <img src="img/star-half.png"  alt="4.3 de 5 estrelas">
-  <img src="img/star-empty.png" alt="4,3 de 5 estrelas">
+        <div class="my-5">
+          <img src="img/star-full.png"  alt="3.4 out of 5 stars">
+          <img src="img/star-full.png"  alt="">
+          <img src="img/star-full.png"  alt="3,4 out of 5 stars">
+          <img src="img/star-half.png"  alt="4.3 de 5 estrelas">
+          <img src="img/star-empty.png" alt="4,3 de 5 estrelas">
+        </div>
 
-
-  <figure role="group" aria-labelledby="fig1">
-    <figcaption id="fig1">
-      The castle through the ages: 1423, 1756, and 1966 respectively.
-    </figcaption>
+        <figure role="group" aria-labelledby="fig1">
+          <figcaption class="mb-3" id="fig1">
+            O castelo através das idades: 1423, 1756 e 1966, respectivamente.
+          </figcaption>
 
 
-    <figure role="group" aria-labelledby="fig11">
-      <img src="img/castle-etching.jpg"
-           alt="The castle has one tower, and a tall wall around it.">
-      <figcaption id="fig11">Charcoal on  wood. Anonymous, circa 1423.</figcaption>
-    </figure>
+          <figure role="group" aria-labelledby="fig11">
+            <img src="img/castle-etching.jpg"
+                 alt="O castelo tem uma torre e uma parede alta em volta.">
+            <figcaption class="mt-3" id="fig11">Carvão vegetal em madeira. Anônimo, por volta de 1423.</figcaption>
+          </figure>
 
-    <figure role="group" aria-labelledby="fig12">
-      <img src="img/castle-painting.jpg"
-           alt="The castle now has two towers and two walls.">
-      <figcaption id="fig12">Oil-based paint on canvas. Eloisa Faulkner, 1756.</figcaption>
-    </figure>
+          <figure role="group" aria-labelledby="fig12">
+            <img src="img/castle-painting.jpg"
+                 alt="O castelo agora tem duas torres e duas paredes.">
+            <figcaption class="mt-3" id="fig12">Tinta à base de óleo sobre tela. Eloisa Faulkner, 1756.</figcaption>
+          </figure>
 
-    <figure role="group" aria-labelledby="fig13">
-      <img src="img/castle-fluro.jpg"
-           alt="The castle lies in ruins, the original tower all that remains in one piece.">
-      <figcaption id="fig13">Film photograph. <span lang="fr">Séraphin Médéric Mieusement</span>, 1936.</figcaption>
-    </figure>
+          <figure role="group" aria-labelledby="fig13">
+            <img src="img/castle-fluro.jpg"
+                 alt="O castelo está em ruínas, a torre original tudo o que resta em uma única peça.">
+            <figcaption class="mt-3" id="fig13">Fotografia <span lang="fr">Séraphin Médéric Mieusement</span>, 1936.</figcaption>
+          </figure>
 
-  </figure>
+        </figure>
 
-  <h2>Mapas de imagens</h2>
+        <h2 class="subtitulo">Mapas de Imagens</h2>
 
-  <img src="img/orgchart.png"
-       alt="Board of directors and related staff: "
-       usemap="#Map">
+        <img src="img/orgchart.png"
+             alt="Conselho de administração da empresa Microsoft"
+             usemap="#Map">
 
-  <map name="Map" id="Map">
-    <area
-      shape="rect"
-      coords="176,14,323,58"
-      href="…"
-      alt="Davy Jones: Chairman">
-    <area shape="rect" coords="81,75,226,114" href="…"
-      alt="Carole Brewster: Company Secretary">
-    <area shape="rect" coords="6,138,155,182" href="…"
-      alt="Harry H Brown: Marketing Director">
-    <area shape="rect" coords="175,138,323,182" href="…"
-      alt="Paula Holbein: Sales Director">
-    <area shape="rect" coords="345,136,496,186" href="…"
-      alt="Hugh Howard: Finance Director">
-  </map>
+        <map name="Map" id="Map">
+          <area
+            shape="rect"
+            coords="176,14,323,58"
+            href="…"
+            alt="Davy Jones: Chairman">
+          <area shape="rect" coords="81,75,226,114" href="…"
+            alt="Carole Brewster: Company Secretary">
+          <area shape="rect" coords="6,138,155,182" href="…"
+            alt="Harry H Brown: Marketing Director">
+          <area shape="rect" coords="175,138,323,182" href="…"
+            alt="Paula Holbein: Sales Director">
+          <area shape="rect" coords="345,136,496,186" href="…"
+            alt="Hugh Howard: Finance Director">
+        </map>
 
-  <h1>Áudio, vídeo e multimídia</h1>
-  <h2>Player de vídeo</h2>
+      </div>
+    </div>
 
-  <video width="320" height="240" alt="Descrição do vídeo" controls>
-    <source src="img/movie.mp4" type="video/mp4">
-    <source src="img/movie.ogg" type="video/ogg">
-    <track kind="subtitles" src="img/subtitles.vtt" srclang="en" label="English descriptions" />
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
 
-    Your browser does not support the video tag.
-  </video>
+        <h1 class="titulo">Áudio, Vídeo e Multimídia</h1>
 
-  <h2>Player de ́áudio</h2>
+        <div class="my-3 w-100">
+          <h2 class="subtitulo">Player de Vídeo</h2>
+          <video width="320" height="240" alt="Descrição do vídeo" controls>
+            <source src="img/movie.mp4" type="video/mp4">
+            <source src="img/movie.ogg" type="video/ogg">
+            <track kind="subtitles" src="img/subtitles.vtt" srclang="en" label="English descriptions" />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
 
-  <audio controls  alt="Descrição do audio">
-    <source src="img/horse.ogg" type="audio/ogg">
-    <source src="img/horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+        <div class="my-3 w-100">
+          <h2 class="subtitulo">Player de Áudio</h2>
+          <audio controls  alt="Descrição do audio">
+            <source src="img/horse.ogg" type="audio/ogg">
+            <source src="img/horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta elementos de áudio.
+          </audio>
+        </div>
 
-  <h1>Outros tipos de mídia</h1>
-  <h2>Notação matemática</h2> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Outros Tipos de Mídia</h1>
+
+        <h2 class="subtitulo">Notação Matemática</h2> 
+        <p class="text-center">Fórmula Quadrática</p>
+        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+        <p class="text-center mt-5">Fórumula da Integral</p>
+        $$f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$$
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Cabeçalhos</h1>
+
+        <h2 class="subtitulo">Títulos de seções</h2>
+        <h1>Este é o meu primeiro título</h1>
+        <h2>Este é o meu segundo título</h2>
+        <h3>Este é o meu terceiro título</h3>
+        <h4>Este é o meu quarto título</h4>
+        <h5>Este é o meu quinto título</h5>
+        <h6>Este é o meu sexto título</h6>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Links</h1>
+
+        <h2 class="subtitulo">Links Locais</h2>
+          <a href="html_images.asp">Tutorial de HTML</a>
+
+        <h2 class="subtitulo">Links Externos</h2>
+        <a href="http://www.w3schools.com/html/">Visite nosso tutorial HTML</a>
+
+        <h2 class="subtitulo">Links em Imagens</h2>
+
+        <a href="default.asp">
+          <img src="img/smiley.gif" alt="Rosto sorrindo">
+        </a>
+      
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1>Tabelas</h1>
+
+        <h2 class="subtitulo">Tabela com Um Cabeçalho</h2>
+        <table>
+          <caption>Expediente de Trabalho</caption>
+            <tr>
+              <td></td>
+              <th>Domingo</th>
+              <th>Segunda</th>
+            </tr>
+            <tr>
+              <th>08:00 - 12:00</th>
+              <td>Fechado</td>
+              <td>Aberto</td>
+            </tr>
+            <tr>
+              <th>12:00 - 18:00</th>
+              <td>Fechado</td>
+              <td>Aberto</td>
+            </tr>
+        </table>
+    
+      </div>
+    </div>
+
+<!--
   
-  <MATH>&int;_a_^b^{f(x)<over>1+x} dx</MATH>
-
-  <h2>Fórmula química</h2>
-  <math class=chem> Fe_2_^2+^Cr_2_O_4_</math>
-
-  <h1>Cabeçalhos</h1>
-  <h2>Títulos de seções</h2>
-
-  <h1>Este é o meu primeiro título</h1>
-  <h2>Este é o meu segundo título</h2>
-  <h3>Este é o meu terceiro título</h3>
-  <h4>Este é o meu quarto título</h4>
-  <h5>Este é o meu quinto título</h5>
-  <h6>Este é o meu sexto título</h6>
-
-  <h1>Links</h1>
-  <h2>Links locais</h2>
-    <a href="html_images.asp">Tutorial de HTML</a>
-
-  <h2>Links externos</h2>
-  <a href="http://www.w3schools.com/html/">Visite nosso tutorial HTML</a>
-
-  <h2>Links em imagens</h2>
-
-  <a href="default.asp">
-    <img src="img/smiley.gif" alt="HTML tutorial">
-  </a>
-
-  <h1>Tabelas</h1>
-  <h2>Tabelas com um cabeçalho</h2>
+  <h2 class="subtitulo">Tabelas com um cabeçalho</h2>
 
   <h3>Exemplo 1: Tabela com células de cabeçalho apenas na linha superior</h3>
   <table>
@@ -314,7 +394,7 @@
     </tr>
   </table>
 
-  <h2>Tabelas com dois cabeçalhos</h2>
+  <h2 class="subtitulo">Tabelas com dois cabeçalhos</h2>
   <h3>Example 1: Tabela com células de cabeçalho na primeira linha e primeira coluna</h3>
   <table>
     <tr>
@@ -435,7 +515,7 @@
     </tbody>
   </table>
 
-  <h2>Tabelas com cabeçalhos irregulares</h2>
+  <h2 class="subtitulo">Tabelas com cabeçalhos irregulares</h2>
   <h3>Exemplo 1: tabela com cabeçalhos de dois níveis</h3>
   <table>
     <col>
@@ -521,7 +601,7 @@
     </tbody>
   </table>
 
-  <h2>Tabelas com cabeçalhos de vários níveis</h2>
+  <h2 class="subtitulo">Tabelas com cabeçalhos de vários níveis</h2>
   <h3>Exemplo 1: Tabela com vários cabeçalhos de coluna em cada coluna</h3>
   <table>
     <caption>
@@ -707,7 +787,7 @@
     </tbody>
   </table>
 
-  <h2>Tabelas com legenda e resumo</h2>
+  <h2 class="subtitulo">Tabelas com legenda e resumo</h2>
   <h3>Exemplo 1: identificando uma tabela usando uma legenda</h3>
   <table>
     <caption>Concertos</caption>
@@ -723,96 +803,124 @@
     </tr>
   </table>
 
-  <h1>Controles, formulários e funcionalidades</h1>
-  <h2>Checkboxes</h2>
-  <form>
-    <label for="bike">Eu tenho uma bicicleta</label> 
-      <input id="bike" type="checkbox" name="vehicle1" value="Bike">
-    </br><label for="car">Eu tenho um carro</label> 
-      <input id="car" type="checkbox" name="vehicle2" value="Car"> 
-  </form>
-  <p>Selecione seu sexo</p>
+-->
 
-  <h2>Radio buttons</h2>
-  <form>
-    <label for="male">Masculino</label> 
-    <input id="male" type="radio" name="gender" value="male" checked>
-    </br>
-    <label for="female">Feminino</label> 
-    <input id="female" type="radio" name="gender" value="female">
-  </form>
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
 
-  <h2>Buttons</h2>
-  <input type="button" onclick="alert('Hello World!')" value="Click Me!">
-  <p>Selecione um modelo de carro</p>
-  
-  	<!------------------------------------------------------------------------->
-	<!----------------- Botao que tem uma interacao ------------------------->
-	<!------------------------------------------------------------------------->
-  	<h2>Botao com animacao</h2>
-	<p>Nesse caso, se você apertar um botão a lâmpada acende ou apaga</p>
-	<button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
-	<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
-	<button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+        <h1 class="titulo">Controles, Formulários e Funcionalidades</h1>
 
-  	<h2>Botao que mostra a hora</h2>
-	<button onclick="myFunction()">Clique aqui para ver a hora</button>
-	<p id="demo"></p>
-
-	<script>
-	function myFunction() {
-		var d = new Date();
-		d.setHours(15);
-		document.getElementById("demo").innerHTML = d;
-	}
-	</script>
-	
-	<h2>Animação movimento de quadrado</h2>
-	<p>
-	<button onclick="myMove()">Clique aqui para ver a animação</button> 
-	</p>
-
-	<div id ="myContainer">
-	<div id ="myAnimation"></div>
-	</div>
-
-	<script>
-		function myMove() {
-		  var elem = document.getElementById("myAnimation");   
-		  var pos = 0;
-		  var id = setInterval(frame, 10);
-		  function frame() {
-			if (pos == 350) {
-			  clearInterval(id);
-			} else {
-			  pos++; 
-			  elem.style.top = pos + 'px'; 
-			  elem.style.left = pos + 'px'; 
-			}
-		  }
-		}	
-	</script>
-
-  
-  <h2>Lista com dropdowns</h2>
-    <select>
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
-    </select>  
+        <h2 class="subtitulo">Caixa de Seleção</h2>
+        <form>
+          <div>
+            <input id="bike" type="checkbox" name="vehicle1" value="Bike">
+            <label for="bike">Eu tenho uma bicicleta</label> 
+          </div>
+          <div>
+            <input id="car" type="checkbox" name="vehicle2" value="Car"> 
+            <label for="car">Eu tenho um carro</label> 
+          </div>
+        </form>
 
 
-  <button type="button" data-container="body" data-toggle="popover" data-trigger="focus" title="Como funciona?" data-content="Selecione um tipo de veículo. Você poderá selecionar outros tipos de veículos e seus acessórios, acessando suas configurações do sitema.">
-    Como funciona?
-  </button>
+        <h2 class="subtitulo">Botão de Opção</h2>
+        <form>
+          <p>Selecione seu sexo</p>
+          <label for="male">Masculino</label> 
+          <input id="male" type="radio" name="gender" value="male" checked>
+          </br>
+          <label for="female">Feminino</label> 
+          <input id="female" type="radio" name="gender" value="female">
+        </form>
+
+        <h2 class="subtitulo">Botões</h2>
+        <div>
+          <input class="btn btn-primary" type="button" onclick="alert('Oi. Eu sou um alerta!')" value="Veja um alerta">
+        </div>
+        
+        <div class="mt-5">
+      	  <p>Nesse caso, se você apertar um botão a lâmpada acende ou apaga.</p>
+        	<button class="btn btn-primary" onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Ligar a luz</button>
+        	<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+        	<button class="btn btn-primary" onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Desligar a luz</button>
+        </div>
+
+        <div class="mt-5">
+      	  <button class="btn btn-primary" onclick="myFunction()">Ver a hora</button>
+      	  <p id="demo"></p>
+        </div>
+
+      	<script>
+      	function myFunction() {
+      		var d = new Date();
+      		d.setHours(15);
+      		document.getElementById("demo").innerHTML = d;
+      	}
+      	</script>
+      	
+      	<h2 class="subtitulo">Animação</h2>
+      	<p>
+      	<button class="btn btn-primary" onclick="myMove()">Iniciar a animação</button> 
+      	</p>
+
+      	<div id ="myContainer">
+      	<div id ="myAnimation"></div>
+      	</div>
+
+      	<script>
+      		function myMove() {
+      		  var elem = document.getElementById("myAnimation");   
+      		  var pos = 0;
+      		  var id = setInterval(frame, 10);
+      		  function frame() {
+      			if (pos == 350) {
+      			  clearInterval(id);
+      			} else {
+      			  pos++; 
+      			  elem.style.top = pos + 'px'; 
+      			  elem.style.left = pos + 'px'; 
+      			}
+      		  }
+      		}	
+      	</script>
+
+        
+        <h2 class="subtitulo">Caixa de Seleção Suspensa</h2>
+
+        <p>Selecione um modelo de carro</p>
+
+          <select class="custom-select w-25">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>  
 
 
-  <p>Entre com seu primeiro nome</p>
+        <button class="btn btn-primary" type="button" data-container="body" data-toggle="popover" data-trigger="focus" title="Como funciona?" data-content="Selecione um tipo de veículo. Você poderá selecionar outros tipos de veículos e seus acessórios, acessando suas configurações do sitema.">
+          Como funciona?
+        </button>
 
-  <h2>Inputs de texto</h2>
-  <label for="firstname">Primeiro nome:</label> 
-  <input type="text" name="firstname" id="firstname" />
+
+        <h2 class="subtitulo">Inputs de Texto</h2>
+        
+        <p>Digite seus dados para completar o cadastro</p>
+
+        <label for="firstname">Nome completo</label> 
+        <div class="input-group mb-3">
+          <input class="form-control" type="text" name="firstname" id="firstname" />
+        </div>
+
+        <label for="email">E-mail</label> 
+        <div class="input-group">
+          <input class="form-control" type="e-mail" name="email" id="email" />
+        </div>
+
+    </div>
+  </div>
+
+
+</div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
