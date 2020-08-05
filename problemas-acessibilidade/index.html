@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Accessibility assessment</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="application/javascript">
+      function removeOldAlert()
+      {
+        var oldAlert = document.getElementById("alert");
+        if (oldAlert){
+          document.body.removeChild(oldAlert);
+        }    
+      }
+     
+      function addAlert(aMsg)
+      {
+        removeOldAlert();
+        var newAlert = document.createElement("div");
+        newAlert.setAttribute("role", "alert");
+        newAlert.setAttribute("id", "alert");
+        var msg = document.createTextNode(aMsg);
+        newAlert.appendChild(msg);
+        document.body.appendChild(newAlert);
+      }
+     
+      function checkValidity(aID, aSearchTerm, aMsg)
+      {
+        var elem = document.getElementById(aID);
+        var invalid = (elem.value.indexOf(aSearchTerm) < 0);
+        if (invalid) {
+          elem.setAttribute("aria-invalid", "true");
+          addAlert(aMsg);
+        } else {
+          elem.setAttribute("aria-invalid", "false");
+          removeOldAlert();
+        }
+      }
+      </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <font size="7">Welcome to our wildlife website</font>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <form class="search">
+        <input type="search" name="q" placeholder="Search query">
+        <input type="submit" value="Go!">
+      </form>
+    </div>
+
+    <main>
+      <article>
+        <font size="6">The trouble with Bears</font>
+        <br><br>
+        By Evan Wild
+        <br><br>
+        Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.
+        <br><br>
+        So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.
+        <br><br>
+        <font size="5">Tipos de urso</font>
+        <br><br>
+        Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.
+        <br><br>
+        Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
+        <br><br>
+        <table>
+          <thead>
+            <tr>
+              <td>Tipo de urso</td>
+              <td>Casaco</td>
+              <td>Tamanho adulto</td>
+              <td>Habitat</td>
+              <td>Tempo de vida</td>
+              <td>Dieta</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Selvagem</td>
+              <td>Marrom ou preto</td>
+              <td>1.4 a 2.8 metros</td>
+              <td>Bosques e florestas</td>
+              <td>25 a 28 anos</td>
+              <td>Peixes, carnes e plantas</td>
+            </tr>
+            <tr>
+              <td>Urbano</td>
+              <td>Preto</td>
+              <td>18 a 22 metros</td>
+              <td>Condomínios</td>
+              <td>20 a 32 anos</td>
+              <td>Carnes</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <font size="5">Habitats and Eating habits</font>
+        <br><br>
+        Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
+        <br><br>
+        <img src="media/wild-bear.jpg">
+        <br><br>
+        Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
+        <br><br>
+        <img src="media/urban-bear.jpg">
+        <br><br>
+        Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.
+        <br><br>
+        <font size="5">Mating rituals</font>
+        <br><br>
+        Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.
+        <br><br>
+        The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
+        <br><br>
+        <audio controls>
+          <source src="media/bear.mp3" type="audio/mp3">
+          <source src="media/bear.ogg" type="audio/ogg">
+          <p>It looks like your browser doesn't support HTML5 audio players.</p>
+        </audio>
+
+        <font size="5">Receita</font>
+        <div style="display:flex;">
+          <p style="width: 500px;"><b>Ingredientes</b></p>
+          <p><b>Utensílios</b></p>
+        </div>
+        <div style="display:flex;">
+          <ul style="min-width: 460px;">
+            <li>1 colher de sopa de manteiga</li>
+            <li>1 lata de leite condensado</li>
+            <li>4 colheres de sopa de chocolate em pó</li>
+            <li>1 pacote de chocolate granulado</li>
+          </ul>
+          <ul>
+            <li>panela</li>
+            <li>colher de pau</li>
+            <li>forminha de brigadeiro</li>
+          </ul>
+        </div>
+
+
+        <aside>
+
+          <font size="5">Sobre o autor</font>
+        <br><br>
+          Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.
+        <br><br>
+          He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
+
+        </aside>
+        <section class="comments">
+          <div class="show-hide">Mostrar comentários</div>
+
+          <div class="comment-wrapper">
+
+            <font size="6">Adicionar comentário</font>
+
+            <form class="comment-form">
+              <div class="flex-pair">
+                Seu nome:
+                <input type="text" name="name" aria-required="true">
+              </div>
+              <div class="flex-pair">
+                Seu comentário:
+                <input type="text" name="comment">
+              </div>
+              <div>
+                <input type="submit" value="Enviar comentário">
+              </div>
+            </form>
+
+            <font size="6">Comentários</font>
+
+            <ul class="comment-container">
+
+              <li>
+
+                <p>Bob Fossil</p>
+
+                <p>Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in a truck and driving them outta here. I run a zoo, you know.</p>
+
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+      </article>
+
+      <div class="secondary">
+        <font size="6">Related</font>
+
+        <ul>
+          <li><a href="#">The trouble with Bees</a></li>
+          <li><a href="#">The trouble with Otters</a></li>
+          <li><a href="#">The trouble with Penguins</a></li>
+          <li><a href="#">The trouble with Octopi</a></li>
+          <li><a href="#">The trouble with Lemurs</a></li>
+        </ul>
+        
+        <font size="6" style="font-size: 24px;">Compartilhar</font>
+        <div style="display: flex">
+          <a href="www.facebook.com/teste">
+            <img width=60 src="https://cdn0.iconfinder.com/data/icons/popular-social-media-colored/48/JD-04-512.png">
+          </a>
+  
+          <a href="www.twitter.com/teste">
+            <img width=60 src="https://cdn0.iconfinder.com/data/icons/popular-social-media-colored/48/JD-13-512.png">
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

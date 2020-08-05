@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+
+  	#myContainer {
+  	  width: 400px;
+  	  height: 400px;
+  	  position: relative;
+  	  background: yellow;
+	  }
+	
+  	#myAnimation {
+  	  width: 50px;
+  	  height: 50px;
+  	  position: absolute;
+  	  background-color: red;
+  	}
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    .newspaper {
+      -webkit-column-count: 3; /* Chrome, Safari, Opera */
+      -moz-column-count: 3; /* Firefox */
+      column-count: 3;
+    }
+
+    h2 {
+
+    }
+
+    .titulo {
+      font-size: 6rem;
+      font-weight: 300;
+      line-height: 1.2;
+      padding-bottom: 1.5rem;
+    }
+
+    .subtitulo {
+      margin-top: 2.5rem;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+  </style>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+        <h1 class="titulo">Texto</h1>
+        <h2 class="subtitulo">Texto em parágrafo</h2>
+
+        <p class="mb-1">Este é o meu primeiro parágrafo.</p>
+        <p>Este é um outro parágrafo.</p>
+
+        <h2 class="subtitulo">Texto em lista ordenada</h2>
+
+        <ol>
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ol>
+
+        <h2 class="subtitulo">Texto em lista desordenada</h2>
+
+        <ul>
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ul>
+
+        <h2 class="subtitulo">Texto em colunas</h2>
+
+        <div class="newspaper">
+          Todo documento HTML possui marcadores (tags), palavras entre parênteses angulares (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança.
+        </div>
+
+        <h2 class="subtitulo">Texto em citação</h2>
+
+        <p>O WWF trabalha constantemente por: <q>Um futuro em que as pessoas vivam em harmonia com a natureza.</q></p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Imagens</h1>
+
+        <h2 class="subtitulo">Imagens informativas</h2>
+
+        <p>
+          <img src="img/dog.jpg" alt="Cachorro com um sino preso ao colarinho.">
+          Cães-guia fora de serviço costumam usar sinos no colarinho.
+        </p>
+
+        <h2 class="subtitulo">Imagens decorativas</h2>
+
+        <img src="img/topinfo_bg.png" alt="" role="presentation">
+
+        <h2 class="subtitulo">Imagens funcionais</h2>
+
+        <div class="py-3">
+          <a href="http://www.w3.org/">
+            <img src="img/w3c.png" alt="Início do W3C">
+          </a>
+        </div>
+
+        <div class="py-3">
+          <a href="http://www.w3.org/">
+            <img src="img/w3c2.png" alt="Imagem do W3C com fundo azul"> 
+            Logotipo do W3C home
+          </a>
+        </div>
+
+        <div class="py-3">
+          <a href="javascript:print()">
+            <img src="img/print.png" alt="Imprimir esta página">
+          </a>
+        </div>
+
+        <h2 class="subtitulo">Imagens de texto</h2>
+
+        <img src="img/acess-city.png" alt="Seu acesso à cidade.">
+
+        <h2 class="subtitulo">Imagens complexas</h2>
+
+        <img src="img/peacock.jpg"
+             alt="Cabeça de um pavão macho"
+             aria-describedby="description"
+             class="mb-4">
+        <p id="description">
+          O macho é azul metálico na coroa, as penas da cabeça são curtas e enroladas. A crista em forma de leque na cabeça é feita de penas com eixos pretos nus e ponta com cinto verde-avermelhado. Uma faixa branca acima do olho e uma mancha branca em forma de meia-lua abaixo do olho é formada por pele branca nua. Os lados da cabeça têm penas azul-esverdeadas iridescentes. A parte traseira tem penas bronze-verdes escamosas com marcações pretas e de cobre.
+        </p>
+
+        <h2 class="subtitulo">Grupos de imagens</h2>
+
+        <div class="my-5">
+          <img src="img/star-full.png"  alt="3.4 out of 5 stars">
+          <img src="img/star-full.png"  alt="">
+          <img src="img/star-full.png"  alt="3,4 out of 5 stars">
+          <img src="img/star-half.png"  alt="4.3 de 5 estrelas">
+          <img src="img/star-empty.png" alt="4,3 de 5 estrelas">
+        </div>
+
+        <figure role="group" aria-labelledby="fig1">
+          <figcaption class="mb-3" id="fig1">
+            O castelo através das idades: 1423, 1756 e 1966, respectivamente.
+          </figcaption>
+
+
+          <figure role="group" aria-labelledby="fig11">
+            <img src="img/castle-etching.jpg"
+                 alt="O castelo tem uma torre e uma parede alta em volta.">
+            <figcaption class="mt-3" id="fig11">Carvão vegetal em madeira. Anônimo, por volta de 1423.</figcaption>
+          </figure>
+
+          <figure role="group" aria-labelledby="fig12">
+            <img src="img/castle-painting.jpg"
+                 alt="O castelo agora tem duas torres e duas paredes.">
+            <figcaption class="mt-3" id="fig12">Tinta à base de óleo sobre tela. Eloisa Faulkner, 1756.</figcaption>
+          </figure>
+
+          <figure role="group" aria-labelledby="fig13">
+            <img src="img/castle-fluro.jpg"
+                 alt="O castelo está em ruínas, a torre original tudo o que resta em uma única peça.">
+            <figcaption class="mt-3" id="fig13">Fotografia <span lang="fr">Séraphin Médéric Mieusement</span>, 1936.</figcaption>
+          </figure>
+
+        </figure>
+
+        <h2 class="subtitulo">Mapas de imagens</h2>
+
+        <img src="img/orgchart.png"
+             alt="Conselho de administração da empresa Microsoft"
+             usemap="#Map">
+
+        <map name="Map" id="Map">
+          <area
+            shape="rect"
+            coords="176,14,323,58"
+            href="…"
+            alt="Davy Jones: Chairman">
+          <area shape="rect" coords="81,75,226,114" href="…"
+            alt="Carole Brewster: Company Secretary">
+          <area shape="rect" coords="6,138,155,182" href="…"
+            alt="Harry H Brown: Marketing Director">
+          <area shape="rect" coords="175,138,323,182" href="…"
+            alt="Paula Holbein: Sales Director">
+          <area shape="rect" coords="345,136,496,186" href="…"
+            alt="Hugh Howard: Finance Director">
+        </map>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Áudio, vídeo e multimídia</h1>
+
+        <div class="my-3 w-100">
+          <h2 class="subtitulo">Player de vídeo</h2>
+          <video width="320" height="240" alt="Descrição do vídeo" controls>
+            <source src="img/movie.mp4" type="video/mp4">
+            <source src="img/movie.ogg" type="video/ogg">
+            <track kind="subtitles" src="img/subtitles.vtt" srclang="en" label="English descriptions" />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+
+        <div class="my-3 w-100">
+          <h2 class="subtitulo">Player de áudio</h2>
+          <audio controls  alt="Descrição do audio">
+            <source src="img/horse.ogg" type="audio/ogg">
+            <source src="img/horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta elementos de áudio.
+          </audio>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Outros tipos de mídia</h1>
+
+        <h2 class="subtitulo">Notação matemática</h2> 
+        <p class="text-center">Fórmula quadrática</p>
+        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+        <p class="text-center mt-5">Fórmula da integral</p>
+        $$f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$$
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Cabeçalhos</h1>
+
+        <h2 class="subtitulo">Títulos de seções</h2>
+        <h1>Este é o meu primeiro título</h1>
+        <h2>Este é o meu segundo título</h2>
+        <h3>Este é o meu terceiro título</h3>
+        <h4>Este é o meu quarto título</h4>
+        <h5>Este é o meu quinto título</h5>
+        <h6>Este é o meu sexto título</h6>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Links</h1>
+
+        <h2 class="subtitulo">Links locais</h2>
+          <a href="html_images.asp">Tutorial de HTML</a>
+
+        <h2 class="subtitulo">Links externos</h2>
+        <a href="http://www.w3schools.com/html/">Visite nosso tutorial HTML</a>
+
+        <h2 class="subtitulo">Links em imagens</h2>
+
+        <a href="default.asp">
+          <img src="img/smiley.gif" alt="Rosto sorrindo">
+        </a>
+      
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1>Tabelas</h1>
+
+        <h2 class="subtitulo">Tabela com um cabeçalho</h2>
+        <table>
+          <caption>Expediente de trabalho</caption>
+            <tr>
+              <td></td>
+              <th>Domingo</th>
+              <th>Segunda</th>
+            </tr>
+            <tr>
+              <th>08:00 - 12:00</th>
+              <td>Fechado</td>
+              <td>Aberto</td>
+            </tr>
+            <tr>
+              <th>12:00 - 18:00</th>
+              <td>Fechado</td>
+              <td>Aberto</td>
+            </tr>
+        </table>
+    
+      </div>
+    </div>
+
+<!--
+  
+  <h2 class="subtitulo">Tabelas com um cabeçalho</h2>
+
+  <h3>Exemplo 1: Tabela com células de cabeçalho apenas na linha superior</h3>
+  <table>
+    <tr>
+      <th>Data</th>
+      <th>Evento</th>
+      <th>Local</th>
+    </tr>
+    <tr>
+      <td>12 Fevereiro</td>
+      <td>Waltz with Strauss</td>
+      <td>Main Hall</td>
+    </tr>
+  </table>
+
+  <h3>Exemplo 2: Tabela com células de cabeçalho somente na primeira coluna</h3>
+  <table>
+    <tr>
+      <th>Data</th>
+      <td>12 February</td>
+      <td>24 March</td>
+      <td>14 April</td>
+    </tr>
+    <tr>
+      <th>Evento</th>
+      <td>Waltz with Strauss</td>
+      <td>The Obelisks</td>
+      <td>The What</td>
+    </tr>
+    <tr>
+      <th>Local</th>
+      <td>Main Hall</td>
+      <td>West Wing</td>
+      <td>Main Hall</td>
+    </tr>
+  </table>
+
+  <h3>Exemplo 3: Tabela com dados ambíguos</h3>
+  <table>
+    <caption>Teddy bear collectors:</caption>
+    <tr>
+      <th scope="col">Último nome</th>
+      <th scope="col">Primeiro nome</th>
+      <th scope="col">Cidade</th>
+    </tr>
+    <tr>
+      <td>Phoenix</td>
+      <td>Imari</td>
+      <td>Henry</td>
+    </tr>
+    <tr>
+      <td>Zeki</td>
+      <td>Rome</td>
+      <td>Min</td>
+    </tr>
+    <tr>
+      <td>Apirka</td>
+      <td>Kelly</td>
+      <td>Brynn</td>
+    </tr>
+  </table>
+
+  <h2 class="subtitulo">Tabelas com dois cabeçalhos</h2>
+  <h3>Example 1: Tabela com células de cabeçalho na primeira linha e primeira coluna</h3>
+  <table>
+    <tr>
+      <td></td>
+      <th>Segunda</th>
+      <th>Terça</th>
+      <th>Quarta</th>
+      <th>Quinta</th>
+      <th>Sexta</th>
+    </tr>
+    <tr>
+      <th>09:00 - 11:00</th>
+      <td>Fechado</td>
+      <td>Aberto</td>
+      <td>Aberto</td>
+      <td>Fechado</td>
+      <td>Fechado</td>
+    </tr>
+    <tr>
+      <th>11:00 - 13:00</th>
+      <td>Aberto</td>
+      <td>Aberto</td>
+      <td>Fechado</td>
+      <td>Fechado</td>
+      <td>Fechado</td>
+    </tr>
+    <tr>
+      <th>13:00 - 15:00</th>
+      <td>Aberto</td>
+      <td>Aberto</td>
+      <td>Aberto</td>
+      <td>Fechado</td>
+      <td>Fechado</td>
+    </tr>
+    <tr>
+      <th>15:00 - 17:00</th>
+      <td>Fechado</td>
+      <td>Fechado</td>
+      <td>Fechado</td>
+      <td>Aberto</td>
+      <td>Aberto</td>
+    </tr>
+  </table>
+
+  <h3>Exemplo 2: Tabela com uma coluna de deslocamento de células de cabeçalho</h3>
+  <table>
+    <caption>
+      Férias tiradas nos últimos seis meses
+    </caption >
+    <thead>
+      <tr>
+        <th scope="col"><abbr title="Identification Number">ID</abbr></th>
+        <th scope="col">Name</th>
+        <th scope="col">July</th>
+        <th scope="col">August</th>
+        <th scope="col">September</th>
+        <th scope="col">October</th>
+        <th scope="col">November</th>
+        <th scope="col">December</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>215</td>
+        <th scope="row">Abel</th>
+        <td>5</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>231</td>
+        <th scope="row">Annette </th>
+        <td>0</td>
+        <td>5</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>6</td>
+      </tr>
+
+      <tr>
+        <td>173</td>
+        <th scope="row">Bernard</th>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>141</td>
+        <th scope="row">Gerald</th>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8</td>
+      </tr>
+
+      <tr>
+        <td>99</td>
+        <th scope="row">Michael</th>
+        <td>8</td>
+        <td>8</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="subtitulo">Tabelas com cabeçalhos irregulares</h2>
+  <h3>Exemplo 1: tabela com cabeçalhos de dois níveis</h3>
+  <table>
+    <col>
+    <colgroup span="2"></colgroup>
+    <colgroup span="2"></colgroup>
+    <tr>
+      <td rowspan="2"></td>
+      <th colspan="2" scope="colgroup">Mars</th>
+      <th colspan="2" scope="colgroup">Venus</th>
+    </tr>
+    <tr>
+      <th scope="col">Produced</th>
+      <th scope="col">Sold</th>
+      <th scope="col">Produced</th>
+      <th scope="col">Sold</th>
+    </tr>
+    <tr>
+      <th scope="row">Teddy Bears</th>
+      <td>50,000</td>
+      <td>30,000</td>
+      <td>100,000</td>
+      <td>80,000</td>
+    </tr>
+    <tr>
+      <th scope="row">Board Games</th>
+      <td>10,000</td>
+      <td>5,000</td>
+      <td>12,000</td>
+      <td>9,000</td>
+    </tr>
+  </table>
+
+  <h3>Exemplo 2: Tabela com cabeçalhos abrangendo várias linhas ou colunas</h3>
+  <table>
+    <caption>
+      Disponibilidade de pôsteres
+    </caption>
+    <col>
+    <col>
+    <colgroup span="3"></colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Nome do poster</th>
+        <th scope="col">Cor</th>
+        <th colspan="3" scope="colgroup">Tamanhos disponíveis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="3" scope="rowgroup">Zodiac</th>
+        <th scope="row">Todo colorido</th>
+        <td>A2</td>
+        <td>A3</td>
+        <td>A4</td>
+      </tr>
+      <tr>
+        <th scope="row">Preto e branco</th>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
+      </tr>
+      <tr>
+        <th scope="row">Sépia</th>
+        <td>A3</td>
+        <td>A4</td>
+        <td>A5</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <th rowspan="2" scope="rowgroup">Angels</th>
+        <th scope="row">Preto e branco</th>
+        <td>A1</td>
+        <td>A3</td>
+        <td>A4</td>
+      </tr>
+      <tr>
+        <th scope="row">Sépia</th>
+        <td>A2</td>
+        <td>A3</td>
+        <td>A5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="subtitulo">Tabelas com cabeçalhos de vários níveis</h2>
+  <h3>Exemplo 1: Tabela com vários cabeçalhos de coluna em cada coluna</h3>
+  <table>
+    <caption>
+      Contatos do fornecedor
+    </caption>
+    <tr>
+      <td id="blank">&nbsp;</td>
+      <th id="co1" headers="blank">Exemplo 1 Ltd</th>
+      <th id="co2" headers="blank">exemplo 2 Co</th>
+    </tr>
+    <tr>
+      <th id="c1" headers="blank">Contato</th>
+      <td headers="co1 c1">James Phillips</td>
+      <td headers="co2 c1">Marie Beauchamp</td>
+    </tr>
+    <tr>
+      <th id="p1"  headers="blank">Posição</th>
+      <td headers="co1 p1">Sales Director</td>
+      <td headers="co2 p1">Sales Manager</td>
+    </tr>
+    <tr>
+      <th id="e1"  headers="blank">E-mail</th>
+      <td headers="co1 e1">jp@1ltd.example.com</td>
+      <td headers="co2 e1">marie@2co.example.com</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <th id="co3" headers="blank">exemplo 3 Ltd</th>
+      <th id="co4" headers="blank">exemplo 4 Inc</th>
+    </tr>
+    <tr>
+      <th id="c2"  headers="blank">Contato</th>
+      <td headers="co3 c2">Suzette Jones</td>
+      <td headers="co4 c2">Alex Howe</td>
+    </tr>
+    <tr>
+      <th id="p2" headers="blank">Posição</th>
+      <td headers="co3 p2">Sales Officer</td>
+      <td headers="co4 p2">Sales Director</td>
+    </tr>
+    <tr>
+      <th id="e2" headers="blank">E-mail</th>
+      <td headers="co3 e2">Suz@ltd3.example.com</td>
+      <td headers="co4 e2">howe@4inc.example.com</td>
+    </tr>
+  </table>
+
+  <h3>Exemplo 2: Tabela com três cabeçalhos relacionados a cada célula de dados</h3>
+  <table summary="A coluna um tem a localização e o tamanho da acomodação, outras colunas mostram o tipo e o número de propriedades disponíveis">
+    <caption>
+      Disponibilidade de alojamento de férias
+    </caption>
+    <thead>
+      <tr>
+        <td></td>
+        <th id="stud" scope="col">
+          Studio
+        </th>
+        <th id="apt" scope="col">
+          <abbr title="Apartment">Apt</abbr>
+        </th>
+        <th id="chal" scope="col">
+          Chalet
+        </th>
+        <th id="villa" scope="col">
+          Villa
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th id="par" class="span" colspan="5" scope="colgroup">
+          Paris
+        </th>
+      </tr>
+      <tr>
+        <th headers="par" id="pbed1">
+          1 bedroom
+        </th>
+        <td headers="par pbed1 stud">
+          11
+        </td>
+        <td headers="par pbed1 apt">
+          20
+        </td>
+        <td headers="par pbed1 chal">
+          25
+        </td>
+        <td headers="par pbed1 villa">
+          23
+        </td>
+      </tr>
+      <tr>
+        <th headers="par" id="pbed2">
+          2 bedroom
+        </th>
+        <td headers="par pbed2 stud">
+          -
+        </td>
+        <td headers="par pbed2 apt">
+          43
+        </td>
+        <td headers="par pbed2 chal">
+          52
+        </td>
+        <td headers="par pbed2 villa">
+          32
+        </td>
+      </tr>
+      <tr>
+        <th headers="par" id="pbed3">
+          3 bedroom
+        </th>
+        <td headers="par pbed3 stud">
+          -
+        </td>
+        <td headers="par pbed3 apt">
+          13
+        </td>
+        <td headers="par pbed3 chal">
+          15
+        </td>
+        <td headers="par pbed3 villa">
+          40
+        </td>
+      </tr>
+      <tr>
+        <th id="rome" class="span" colspan="5" scope="colgroup">
+          Rome
+        </th>
+      </tr>
+      <tr>
+        <th id="rbed1" headers="rome">
+          1 bedroom
+        </th>
+        <td headers="rome rbed1 stud">
+          13
+        </td>
+        <td headers="rome rbed1 apt">
+          21
+        </td>
+        <td headers="rome rbed1 chal">
+          22
+        </td>
+        <td headers="rome rbed1 villa">
+          3
+        </td>
+      </tr>
+      <tr>
+        <th id="rbed2" headers="rome">
+          2 bedroom
+        </th>
+        <td headers="rome rbed2 stud">
+          -
+        </td>
+        <td headers="rome rbed2 apt">
+          23
+        </td>
+        <td headers="rome rbed2 chal">
+          43
+        </td>
+        <td headers="rome rbed2 villa">
+          30
+        </td>
+      </tr>
+      <tr>
+        <th id="rbed3" headers="rome">
+          3 bedroom
+        </th>
+        <td headers="rome rbed3 stud">
+          -
+        </td>
+        <td headers="rome rbed3 apt">
+          16
+        </td>
+        <td headers="rome rbed3 chal">
+          32
+        </td>
+        <td headers="rome rbed3 villa">
+          40
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="subtitulo">Tabelas com legenda e resumo</h2>
+  <h3>Exemplo 1: identificando uma tabela usando uma legenda</h3>
+  <table>
+    <caption>Concertos</caption>
+    <tr>
+      <th>Data</th>
+      <th>Evento</th>
+      <th>Local</th>
+    </tr>
+    <tr>
+      <td>12 Fev</td>
+      <td>Waltz with Strauss</td>
+      <td>Main Hall</td>
+    </tr>
+  </table>
+
+-->
+
+    <div class="row">
+      <div class="col py-5 border-top border-bottom">
+
+        <h1 class="titulo">Controles, formulários e funcionalidades</h1>
+
+        <h2 class="subtitulo">Caixa de seleção</h2>
+        <form>
+          <div>
+            <input id="bike" type="checkbox" name="vehicle1" value="Bike">
+            <label for="bike">Eu tenho uma bicicleta</label> 
+          </div>
+          <div>
+            <input id="car" type="checkbox" name="vehicle2" value="Car"> 
+            <label for="car">Eu tenho um carro</label> 
+          </div>
+        </form>
+
+
+        <h2 class="subtitulo">Botão de opção</h2>
+        <form>
+          <p>Selecione seu sexo</p>
+          <label for="male">Masculino</label> 
+          <input id="male" type="radio" name="gender" value="male" checked>
+          </br>
+          <label for="female">Feminino</label> 
+          <input id="female" type="radio" name="gender" value="female">
+        </form>
+
+        <h2 class="subtitulo">Botão de alerta</h2>
+        <div>
+          <input class="btn btn-primary" type="button" onclick="alert('Oi. Eu sou um alerta!')" value="Veja um alerta">
+        </div>
+        
+        <h2 class="subtitulo">Botão para ligar a luz</h2>
+        <div class="mt-5">
+      	  <p>Nesse caso, se você apertar um botão a lâmpada acende ou apaga.</p>
+        	<button class="btn btn-primary" onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Ligar a luz</button>
+        	<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+        	<button class="btn btn-primary" onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Desligar a luz</button>
+        </div>
+
+        <h2 class="subtitulo">Botão para ver a hora</h2>
+        <div class="mt-5">
+      	  <button class="btn btn-primary" onclick="myFunction()">Ver a hora</button>
+      	  <p id="demo"></p>
+        </div>
+
+      	<script>
+      	function myFunction() {
+      		var d = new Date();
+      		d.setHours(15);
+      		document.getElementById("demo").innerHTML = d;
+      	}
+      	</script>
+      	
+      	<h2 class="subtitulo">Animação</h2>
+      	<p>
+      	<button class="btn btn-primary" onclick="myMove()">Iniciar a animação</button> 
+      	</p>
+
+      	<div id ="myContainer">
+      	<div id ="myAnimation"></div>
+      	</div>
+
+      	<script>
+      		function myMove() {
+      		  var elem = document.getElementById("myAnimation");   
+      		  var pos = 0;
+      		  var id = setInterval(frame, 10);
+      		  function frame() {
+      			if (pos == 350) {
+      			  clearInterval(id);
+      			} else {
+      			  pos++; 
+      			  elem.style.top = pos + 'px'; 
+      			  elem.style.left = pos + 'px'; 
+      			}
+      		  }
+      		}	
+      	</script>
+
+        
+        <h2 class="subtitulo">Caixa de seleção suspensa</h2>
+
+        <p>Selecione um modelo de carro</p>
+
+          <select class="custom-select w-25">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>  
+
+
+        <button class="btn btn-primary" type="button" data-container="body" data-toggle="popover" data-trigger="focus" title="Como funciona?" data-content="Selecione um tipo de veículo. Você poderá selecionar outros tipos de veículos e seus acessórios, acessando suas configurações do sistema.">
+          Como funciona?
+        </button>
+
+
+        <h2 class="subtitulo">Inputs de texto</h2>
+        
+        <p>Digite seus dados para completar o cadastro</p>
+        <form>
+          <label for="firstname">Nome completo</label> 
+          <div class="input-group mb-3">
+            <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Fulano da Silva" required/>
+          </div>
+
+          <label for="profissao">Profissão</label> 
+          <div class="input-group mb-3">
+            <input class="form-control" type="text" name="profissao" id="profissao" value="Médico" disabled/>
+          </div>
+
+          <label for="email">E-mail</label> 
+          <div class="input-group mb-3">
+            <input class="form-control" type="e-mail" name="email" id="email" placeholder="fulano@email.com" required/>
+          </div>
+
+          <label for="password">Senha</label> 
+          <div class="input-group">
+            <input class="form-control" type="password" name="password" id="password" required/>
+          </div>
+
+          <input class="btn btn-primary mt-3" type="submit" value="Cadastrar">
+        </form>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col py-5 border-top border-bottom">
+
+      <h1 class="titulo">Outros</h1>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Abrir modal
+        </button>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5>Título da modal</h5>
+                <p>Sou o conteúdo da modal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+
+  </script>
+
+</body>
+
+</html>
